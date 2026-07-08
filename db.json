@@ -1,0 +1,87 @@
+{
+  "users": [
+    {
+      "name": "HARSHAD SHINDE",
+      "email": "harshadshinde3131@gmail.com",
+      "password": "12345",
+      "role": "admin",
+      "id": "QUV0dKwGZII"
+    },
+    {
+      "name": "HARSHAD SHINDE",
+      "email": "harshadshinde.riyality@gmail.com",
+      "password": "313115",
+      "role": "faculty",
+      "id": "r_1MMkZV34c"
+    }
+  ],
+  "students": [
+    {
+      "prn": "QWERTY",
+      "name": "Harshad Shinde",
+      "email": "harshadshinde3131@gmail.com",
+      "m1": "75",
+      "m2": "89",
+      "m3": "90",
+      "total": 254,
+      "percentage": "84.67",
+      "id": "5SEF8VhViDs"
+    },
+    {
+      "prn": "ASFSFSF",
+      "name": "Pranali Shinde",
+      "email": "abc123@gmail.com",
+      "m1": "70",
+      "m2": "89",
+      "m3": "90",
+      "total": 249,
+      "percentage": "83.00",
+      "id": "NKsMce7e_pI"
+    },
+    {
+      "prn": "DFGDE",
+      "name": "HARSHAD SHINDE",
+      "email": "harshadshinde3131@gmail.com",
+      "m1": "0",
+      "m2": "0",
+      "m3": "0",
+      "total": 0,
+      "percentage": "0.00",
+      "id": "NnLUj4ZVTxo"
+    },
+    {
+      "prn": "ERTYRTY",
+      "name": "HARSHAD SHINDE",
+      "email": "harshadshinde3131@gmail.com",
+      "m1": "88",
+      "m2": "76",
+      "m3": "75",
+      "total": 239,
+      "percentage": "79.67",
+      "id": "6kw9uMyzxpg"
+    },
+    {
+      "prn": "226SDDF062",
+      "name": "Aniket Shinde",
+      "email": "aniketshinde.31@gmail.com",
+      "m1": "56",
+      "m2": "67",
+      "m3": "89",
+      "total": 212,
+      "percentage": "70.67",
+      "id": "nyMmJagtGZA"
+    },
+    {
+      "prn": "QWERTY",
+      "name": "HARSHAD SHINDE",
+      "email": "harshadshinde3131@gmail.com",
+      "m1": "34",
+      "m2": "76",
+      "m3": "78",
+      "total": 188,
+      "percentage": "62.67",
+      "id": "6vM_n72w7xQ"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}

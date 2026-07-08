@@ -1,0 +1,488 @@
+/* Modern Student Registration Form Styles */
+
+.student-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    padding: 30px 20px;
+    /* background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%); */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.student-container {
+    background: white;
+    border-radius: 20px;
+    /* box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3); */
+    padding: 40px;
+    width: 100%;
+    max-width: 750px;
+    animation: fadeInUp 0.5s ease-out;
+}
+
+/* Header */
+.student-header {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.student-icon {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 70px;
+    height: 70px;
+    background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+    border-radius: 50%;
+    margin-bottom: 15px;
+    font-size: 30px;
+    color: white;
+    box-shadow: 0 8px 25px rgba(79, 172, 254, 0.4);
+}
+
+.student-header h1 {
+    font-size: 28px;
+    font-weight: 700;
+    color: #2d3748;
+    margin: 0 0 8px 0;
+}
+
+.student-header p {
+    color: #718096;
+    font-size: 14px;
+    margin: 0;
+}
+
+/* Navigation */
+.student-nav {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 20px;
+}
+
+.nav-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 18px;
+    background: #ebf8ff;
+    color: #4facfe;
+    border: none;
+    border-radius: 10px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.nav-btn:hover {
+    background: #4facfe;
+    color: white;
+    transform: translateX(-3px);
+    box-shadow: 0 4px 15px rgba(79, 172, 254, 0.3);
+}
+
+/* Form */
+.student-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.form-group.full-width {
+    grid-column: 1 / -1;
+}
+
+.form-label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #2d3748;
+}
+
+.label-icon {
+    font-size: 14px;
+    color: #4facfe;
+}
+
+.input-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    background: #f7fafc;
+    border-radius: 12px;
+    border: 2px solid transparent;
+    transition: all 0.3s ease;
+}
+
+.input-wrapper:focus-within {
+    border-color: #4facfe;
+    background: white;
+    box-shadow: 0 0 0 4px rgba(79, 172, 254, 0.1);
+}
+
+.input-wrapper.error {
+    border-color: #fc8181;
+    background: #fff5f5;
+}
+
+.input-wrapper.error .input-icon {
+    color: #fc8181;
+}
+
+.input-wrapper.success {
+    border-color: #68d391;
+    background: #f0fff4;
+}
+
+.input-wrapper.success .input-icon {
+    color: #68d391;
+}
+
+.input-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 12px 0 16px;
+    color: #a0aec0;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+.input-wrapper:focus-within .input-icon {
+    color: #4facfe;
+}
+
+.form-input {
+    flex: 1;
+    padding: 14px 16px 14px 0;
+    border: none;
+    background: transparent;
+    font-size: 15px;
+    color: #2d3748;
+    outline: none;
+}
+
+.form-input::placeholder {
+    color: #a0aec0;
+    font-size: 14px;
+}
+
+.form-input[type="number"] {
+    -moz-appearance: textfield;
+}
+
+.form-input[type="number"]::-webkit-outer-spin-button,
+.form-input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.input-status {
+    position: absolute;
+    right: 14px;
+    font-size: 18px;
+}
+
+.input-status.valid {
+    color: #68d391;
+}
+
+.input-status.invalid {
+    color: #fc8181;
+}
+
+.error-message {
+    font-size: 12px;
+    color: #fc8181;
+    margin-top: 4px;
+    padding-left: 8px;
+}
+
+/* Marks Section */
+.marks-section {
+    background: #f7fafc;
+    border-radius: 16px;
+    padding: 20px;
+    margin-top: 5px;
+}
+
+.marks-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.marks-icon {
+    font-size: 20px;
+    color: #4facfe;
+}
+
+.marks-header h3 {
+    font-size: 16px;
+    font-weight: 600;
+    color: #2d3748;
+    margin: 0;
+}
+
+.marks-hint {
+    font-size: 12px;
+    color: #a0aec0;
+    margin-left: auto;
+}
+
+.marks-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 15px;
+}
+
+.marks-grid .form-group {
+    gap: 4px;
+}
+
+.marks-grid .form-label {
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.marks-grid .input-wrapper {
+    background: white;
+}
+
+/* Results Preview */
+.results-preview {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding: 20px;
+    background: linear-gradient(135deg, #ebf8ff 0%, #e6fffa 100%);
+    border-radius: 16px;
+    border: 2px solid #bee3f8;
+}
+
+.result-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.result-icon {
+    font-size: 24px;
+    color: #4facfe;
+}
+
+.result-label {
+    font-size: 14px;
+    color: #4a5568;
+}
+
+.result-value {
+    font-size: 20px;
+    font-weight: 700;
+    color: #2d3748;
+}
+
+.result-value.highlight {
+    color: #4facfe;
+    font-size: 24px;
+}
+
+.result-divider {
+    width: 2px;
+    height: 40px;
+    background: #cbd5e0;
+}
+
+/* Submit Button */
+.submit-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 16px;
+    background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+    color: white;
+    border: none;
+    border-radius: 14px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(79, 172, 254, 0.4);
+    margin-top: 5px;
+}
+
+.submit-btn:hover:not(:disabled) {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(79, 172, 254, 0.5);
+}
+
+.submit-btn:active:not(:disabled) {
+    transform: translateY(0);
+}
+
+.submit-btn:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+.submit-btn.loading {
+    opacity: 0.8;
+}
+
+/* Spinner */
+.spinner {
+    display: inline-block;
+    width: 22px;
+    height: 22px;
+    border: 3px solid rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    border-top-color: white;
+    animation: spin 0.8s ease-in-out infinite;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* Form Footer */
+.form-footer {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 16px;
+    background: #f7fafc;
+    border-radius: 10px;
+    font-size: 13px;
+    color: #718096;
+}
+
+.info-icon {
+    font-size: 16px;
+    color: #4facfe;
+    flex-shrink: 0;
+}
+
+/* Animations */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .student-container {
+        padding: 30px 20px;
+    }
+
+    .form-row {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .marks-grid {
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+
+    .results-preview {
+        flex-direction: column;
+        gap: 15px;
+        padding: 15px;
+    }
+
+    .result-divider {
+        width: 80%;
+        height: 2px;
+    }
+
+    .student-header h1 {
+        font-size: 24px;
+    }
+
+    .student-icon {
+        width: 60px;
+        height: 60px;
+        font-size: 25px;
+    }
+
+    .marks-header {
+        flex-wrap: wrap;
+    }
+
+    .marks-hint {
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .student-wrapper {
+        padding: 15px 10px;
+    }
+
+    .student-container {
+        padding: 20px 15px;
+        border-radius: 15px;
+    }
+
+    .form-input {
+        padding: 12px 14px 12px 0;
+        font-size: 14px;
+    }
+
+    .submit-btn {
+        padding: 14px;
+        font-size: 15px;
+    }
+
+    .result-value {
+        font-size: 18px;
+    }
+
+    .result-value.highlight {
+        font-size: 20px;
+    }
+}
+
+/* Additional Animation for Results Preview */
+.results-preview {
+    animation: slideDown 0.3s ease-out;
+}
+
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

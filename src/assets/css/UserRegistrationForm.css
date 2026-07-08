@@ -1,0 +1,356 @@
+/* Modern Registration Form Styles */
+
+.register-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    /* background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); */
+    padding: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.register-container {
+    background: white;
+    border-radius: 20px;
+    /* box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3); */
+    padding: 40px;
+    width: 100%;
+    max-width: 480px;
+    transition: transform 0.3s ease;
+    animation: fadeInUp 0.5s ease-out;
+}
+
+.register-container:hover {
+    transform: translateY(-5px);
+}
+
+/* Header Section */
+.register-header {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.register-icon {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 70px;
+    height: 70px;
+    background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+    border-radius: 50%;
+    margin-bottom: 15px;
+    font-size: 30px;
+    color: white;
+    box-shadow: 0 8px 25px rgba(245, 87, 108, 0.4);
+}
+
+.register-header h1 {
+    font-size: 28px;
+    font-weight: 700;
+    color: #2d3748;
+    margin: 0 0 8px 0;
+}
+
+.register-header p {
+    color: #718096;
+    font-size: 14px;
+    margin: 0;
+}
+
+/* Navigation Links */
+.register-nav {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 20px;
+}
+
+.nav-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: #667eea;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    padding: 8px 16px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    background: #f7fafc;
+}
+
+.nav-link:hover {
+    background: #edf2f7;
+    transform: translateX(-3px);
+}
+
+.nav-link.table-link {
+    color: #667eea;
+}
+
+.nav-link.back-link {
+    color: #718096;
+}
+
+/* Form Styles */
+.register-form {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.form-label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #2d3748;
+}
+
+.label-icon {
+    font-size: 14px;
+    color: #667eea;
+}
+
+.input-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    background: #f7fafc;
+    border-radius: 12px;
+    border: 2px solid transparent;
+    transition: all 0.3s ease;
+}
+
+.input-wrapper:focus-within {
+    border-color: #667eea;
+    background: white;
+    box-shadow: 0 0 0 4px rgba(102, 126, 234, 0.1);
+}
+
+.input-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 12px 0 16px;
+    color: #a0aec0;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+.input-wrapper:focus-within .input-icon {
+    color: #667eea;
+}
+
+.form-input {
+    flex: 1;
+    padding: 14px 16px 14px 0;
+    border: none;
+    background: transparent;
+    font-size: 15px;
+    color: #2d3748;
+    outline: none;
+}
+
+.form-input::placeholder {
+    color: #a0aec0;
+    font-size: 14px;
+}
+
+/* Role Selection */
+.role-group {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    margin-top: 4px;
+}
+
+.role-option {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 14px;
+    background: #f7fafc;
+    border: 2px solid transparent;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: 500;
+    color: #4a5568;
+}
+
+.role-option:hover {
+    background: #edf2f7;
+    transform: translateY(-2px);
+}
+
+.role-option.selected {
+    background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+    color: white;
+    border-color: transparent;
+    box-shadow: 0 4px 15px rgba(245, 87, 108, 0.3);
+}
+
+.role-option input[type="radio"] {
+    display: none;
+}
+
+.role-icon {
+    font-size: 22px;
+}
+
+.role-option.selected .role-icon {
+    color: white;
+}
+
+/* Register Button */
+.register-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 14px;
+    background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+    color: white;
+    border: none;
+    border-radius: 12px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(245, 87, 108, 0.4);
+    margin-top: 8px;
+}
+
+.register-btn:hover:not(:disabled) {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(245, 87, 108, 0.5);
+}
+
+.register-btn:active:not(:disabled) {
+    transform: translateY(0);
+}
+
+.register-btn:disabled {
+    opacity: 0.7;
+    cursor: not-allowed;
+}
+
+/* Loading Spinner */
+.spinner {
+    display: inline-block;
+    width: 22px;
+    height: 22px;
+    border: 3px solid rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    border-top-color: white;
+    animation: spin 0.8s ease-in-out infinite;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* Login Section */
+.login-section {
+    text-align: center;
+    margin-top: 5px;
+}
+
+.login-text {
+    color: #718096;
+    font-size: 14px;
+    margin: 0;
+}
+
+.login-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    color: #667eea;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.login-link:hover {
+    color: #5a67d8;
+    transform: translateX(3px);
+}
+
+/* Animations */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 520px) {
+    .register-container {
+        padding: 30px 20px;
+        border-radius: 15px;
+        max-width: 100%;
+    }
+
+    .register-header h1 {
+        font-size: 24px;
+    }
+
+    .register-icon {
+        width: 60px;
+        height: 60px;
+        font-size: 25px;
+    }
+
+    .role-group {
+        grid-template-columns: 1fr;
+    }
+
+    .register-nav {
+        justify-content: center;
+    }
+}
+
+/* Input Validation States */
+.input-wrapper.error {
+    border-color: #fc8181;
+    background: #fff5f5;
+}
+
+.input-wrapper.error .input-icon {
+    color: #fc8181;
+}
+
+.input-wrapper.success {
+    border-color: #68d391;
+    background: #f0fff4;
+}
+
+.input-wrapper.success .input-icon {
+    color: #68d391;
+}
+
+/* Tooltip Style for Validation */
+.validation-message {
+    font-size: 12px;
+    color: #fc8181;
+    margin-top: 4px;
+    padding-left: 8px;
+}
